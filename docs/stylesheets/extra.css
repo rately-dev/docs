@@ -1,0 +1,56 @@
+.center {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Rainbow Glow Effect for Logo */
+.md-header .md-logo {
+    position: relative;
+    border-radius: 8px;
+    animation: rainbowGlow 3s ease-in-out infinite;
+    transition: all 0.3s ease;
+    transform: scale(1.25);
+}
+
+.md-header .md-logo:hover {
+    transform: scale(1.35);
+    animation-duration: 1.5s;
+}
+
+@keyframes rainbowGlow {
+    0% {
+        filter:
+                drop-shadow(0 0 5px rgba(255, 0, 150, 0.24))
+                drop-shadow(0 0 10px rgba(255, 0, 150, 0.12));
+    }
+    16.67% {
+        filter:
+                drop-shadow(0 0 5px rgba(255, 50, 0, 0.24))
+                drop-shadow(0 0 10px rgba(255, 50, 0, 0.12));
+    }
+    33.33% {
+        filter:
+                drop-shadow(0 0 5px rgba(255, 200, 0, 0.24))
+                drop-shadow(0 0 10px rgba(255, 200, 0, 0.12));
+    }
+    50% {
+        filter:
+                drop-shadow(0 0 5px rgba(0, 255, 100, 0.24))
+                drop-shadow(0 0 10px rgba(0, 255, 100, 0.12));
+    }
+    66.67% {
+        filter:
+                drop-shadow(0 0 5px rgba(0, 150, 255, 0.24))
+                drop-shadow(0 0 10px rgba(0, 150, 255, 0.12));
+    }
+    83.33% {
+        filter:
+                drop-shadow(0 0 5px rgba(100, 0, 255, 0.24))
+                drop-shadow(0 0 10px rgba(100, 0, 255, 0.12));
+    }
+    100% {
+        filter:
+                drop-shadow(0 0 5px rgba(255, 0, 150, 0.24))
+                drop-shadow(0 0 10px rgba(255, 0, 150, 0.12));
+    }
+}

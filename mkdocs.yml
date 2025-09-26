@@ -1,0 +1,117 @@
+site_name: Rately Documentation
+site_url: https://rately.dev
+site_description: Configurable, per-identity rate limiting at Cloudflare's edge. Drop-in via proxy or ask/allow via API. Flexible keys (user/API key/header/query). ~25ms added latency end-to-end.
+site_author: omegion
+
+repo_url: https://github.com/rately-dev/docs/
+edit_uri: https://github.com/rately-dev/docs/blob/main/docs/
+
+docs_dir: docs
+site_dir: site
+copyright: Copyright &copy; 2024 - <script>document.write(new Date().getFullYear())</script> &bull; Made by <b><a href="https://github.com/omegion" target="_blank">omegion</a></b> with ❤️
+
+# Navigation structure
+nav:
+  - Home:
+    - Overview: index.md
+    - Get Started: home/get-started.md
+
+theme:
+  name: material
+  logo: assets/img/logo.png
+  favicon: assets/favicons/favicon.ico
+  custom_dir: overrides
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: pink
+      primary: pink
+      accent: pink
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: pink
+      accent: pink
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  features:
+    - navigation.top
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.footer
+    - toc.follow
+    - toc.integrates
+    - content.tooltips
+    - search.suggest
+    - search.highlight
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  generator: false
+  analytics:
+    provider: google
+    property: G-B2YVYLN0PC
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback!
+  consent:
+    title: Cookie consent
+    description: >-
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/rately-dev
+      name: Official Rately GitHub Page
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+  - git-committers:
+      repository: rately-dev/docs
+      branch: main
+      token: !ENV ["GITHUB_TOKEN"]
+
