@@ -47,7 +47,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Create CNAME file for GitHub Pages
-        run: echo "docs.dbbackup.io" > ./site/CNAME
+        run: echo "docs.rately.dev" > ./site/CNAME
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
