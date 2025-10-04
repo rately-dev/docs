@@ -13,6 +13,9 @@ basement_dist
 .idea
 yarn.lock
 
+# MkDocs build files
+site/
+
 # Vuepress
 src/.vuepress/dist*
 .cache
