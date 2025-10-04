@@ -10,14 +10,24 @@ Rately is a rate limiting service that runs on Cloudflare's global edge network.
 - **Flexible identity** - Limit by user ID, API key, header, query param — not just IP
 - **Drop-in integration** - No code changes required
 - **Instant configuration** - Update limits on the fly without redeploys
+- **Single Sign On** - Streamline team access with [GitHub and Google SSO](../features/sso.md)
 
 ## Quick Start
 
 ### Step 1: Sign Up
 
+Choose your preferred sign-up method:
+
+**Option A: Single Sign On (Recommended)**
 1. Visit [rately.dev](https://rately.dev/)
-2. Create your account
-3. Get your API credentials
+2. Click "Sign in with GitHub" or "Sign in with Google"
+3. Authorize Rately and get instant access
+4. [Learn more about SSO benefits →](../features/sso.md)
+
+**Option B: Email & Password**
+1. Visit [rately.dev](https://rately.dev/)
+2. Create your account with email and password
+3. Verify your email and get your API credentials
 
 ### Step 2: Choose Integration Mode
 
